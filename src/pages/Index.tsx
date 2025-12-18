@@ -3,16 +3,32 @@ import walmartProducts from "@/assets/walmart-products.png";
 
 const Index = () => {
   const ctaLink = "https://gloffers.org/aff_c?offer_id=3291&aff_id=31368";
+  const pageUrl = encodeURIComponent(window.location.href);
+  const shareText = encodeURIComponent("Win a $750 x2 Walmart Gift Card! 🎁");
+
+  const shareToTwitter = () => {
+    window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${pageUrl}`, '_blank');
+  };
+
+  const shareToFacebook = () => {
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '_blank');
+  };
+
+  const shareToInstagram = () => {
+    // Instagram doesn't have direct web share, copy link instead
+    navigator.clipboard.writeText(window.location.href);
+    alert("Link copied! Share it on Instagram.");
+  };
 
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="container py-12 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-4">
-          Win a $750<br />Walmart Gift Card!
+          Win a $750 <span className="text-cta-gold">x2</span><br />Walmart Gift Card!
         </h1>
         <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto">
-          Shop your favorite items with a $750 Walmart credit!
+          Shop your favorite items with a $750 x2 Walmart credit!
         </p>
 
         <a
@@ -90,7 +106,7 @@ const Index = () => {
               Get Rewarded
             </h3>
             <p className="text-muted-foreground text-sm">
-              Receive your $750 Walmart gift card!
+              Receive your $750 x2 Walmart gift card!
             </p>
           </div>
         </div>
@@ -122,16 +138,16 @@ const Index = () => {
         </p>
 
         <div className="grid grid-cols-2 gap-3 mb-3">
-          <button className="social-btn">
+          <button onClick={shareToTwitter} className="social-btn">
             <Share className="w-5 h-5" />
             X (Twitter)
           </button>
-          <button className="social-btn">
+          <button onClick={shareToInstagram} className="social-btn">
             <MessageCircle className="w-5 h-5" />
             Instagram
           </button>
         </div>
-        <button className="social-btn w-full">
+        <button onClick={shareToFacebook} className="social-btn w-full">
           <span className="font-bold">f</span>
           Facebook
         </button>
