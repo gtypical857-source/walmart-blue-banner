@@ -2,9 +2,9 @@ import { Check, Gift, DollarSign, Share, MessageCircle } from "lucide-react";
 import walmartProducts from "@/assets/walmart-products.png";
 
 const Index = () => {
-  const ctaLink = "https://gloffers.org/aff_c?offer_id=3291&aff_id=31368";
+  const ctaLink = "https://trkio.org/aff_c?offer_id=1913&aff_id=31368";
   const pageUrl = encodeURIComponent(window.location.href);
-  const shareText = encodeURIComponent("Win a $750 x2 Walmart Gift Card! 🎁");
+  const shareText = encodeURIComponent("Win a $750 Walmart Gift Card! 🎁");
 
   const shareToTwitter = () => {
     window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${pageUrl}`, '_blank');
@@ -25,10 +25,10 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container py-12 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-4">
-          Win a $750 <span className="text-cta-gold">x2</span><br />Walmart Gift Card!
+          Win a $750<br />Walmart Gift Card!
         </h1>
         <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto">
-          Shop your favorite items with a $750 x2 Walmart credit!
+          Shop your favorite items with a $750 Walmart credit!
         </p>
 
         <a
@@ -106,7 +106,7 @@ const Index = () => {
               Get Rewarded
             </h3>
             <p className="text-muted-foreground text-sm">
-              Receive your $750 x2 Walmart gift card!
+              Receive your $750 Walmart gift card!
             </p>
           </div>
         </div>
