@@ -1,5 +1,6 @@
 import { Check, Gift, DollarSign, Share, MessageCircle } from "lucide-react";
 import walmartProducts from "@/assets/walmart-products.png";
+import SocialProofNotification from "@/components/SocialProofNotification";
 
 const Index = () => {
   const ctaLink = "https://trkio.org/aff_c?offer_id=1913&aff_id=31368";
@@ -22,6 +23,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SocialProofNotification />
       {/* Hero Section */}
       <section className="container py-12 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-4">
