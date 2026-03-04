@@ -89,10 +89,10 @@ const Index = () => {
             </div>
             <div className="step-number">2</div>
             <h3 className="font-bold text-lg text-card-foreground mb-2">
-              Complete 3-5 Deals
+              Complete 4-5 Deals
             </h3>
             <p className="text-muted-foreground text-sm">
-              Sign up for 3-5 offers from our partners.
+              Sign up for 4-5 offers from our partners.
             </p>
           </div>
 
