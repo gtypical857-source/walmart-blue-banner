@@ -23,6 +23,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SocialProofNotification />
       {/* Hero Section */}
       <section className="container py-12 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-4">
