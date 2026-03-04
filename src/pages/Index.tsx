@@ -92,7 +92,7 @@ const Index = () => {
               Complete 4-5 Deals
             </h3>
             <p className="text-muted-foreground text-sm">
-              Sign up for 3-5 offers from our partners.
+              Sign up for 4-5 offers from our partners.
             </p>
           </div>
 
