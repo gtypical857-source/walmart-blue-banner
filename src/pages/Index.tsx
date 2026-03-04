@@ -1,5 +1,6 @@
 import { Check, Gift, DollarSign, Share, MessageCircle } from "lucide-react";
 import walmartProducts from "@/assets/walmart-products.png";
+import SocialProofNotification from "@/components/SocialProofNotification";
 
 const Index = () => {
   const ctaLink = "https://trkio.org/aff_c?offer_id=1913&aff_id=31368";
