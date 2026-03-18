@@ -1,5 +1,5 @@
 import { Check, Gift, DollarSign, Share, MessageCircle } from "lucide-react";
-import walmartProducts from "@/assets/walmart-products.png";
+
 import SocialProofNotification from "@/components/SocialProofNotification";
 
 const Index = () => {
