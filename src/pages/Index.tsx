@@ -1,5 +1,5 @@
 import { Check, Gift, DollarSign, Share, MessageCircle } from "lucide-react";
-import walmartProducts from "@/assets/walmart-products.png";
+
 import SocialProofNotification from "@/components/SocialProofNotification";
 
 const Index = () => {
@@ -44,19 +44,6 @@ const Index = () => {
           Open to US, CA, UK, AU residents, 18+
         </p>
 
-        {/* Product Image */}
-        <div className="mt-8 relative">
-          <div className="bg-primary/10 rounded-2xl overflow-hidden shadow-card">
-            <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-4 py-2 rounded-full font-semibold text-sm z-10">
-              $750 Sweepstakes
-            </div>
-            <img
-              src={walmartProducts}
-              alt="Walmart shopping products including groceries and household items"
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
       </section>
 
       {/* How It Works Section */}
