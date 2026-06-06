@@ -146,7 +146,7 @@ const Index = () => {
       <footer className="bg-foreground text-primary-foreground py-10 mt-8">
         <div className="container text-center">
           <p className="text-sm leading-relaxed mb-6 opacity-90">
-            US, CA, UK, AU residents, 18+. Ends December 31, 2025. No purchase needed. 
+            US, CA, UK, AU residents, 18+. Ends July 31, 2026. No purchase needed.
             Void where prohibited. Odds of winning depend on number of eligible entries received. 
             One grand prize winner will be selected.
           </p>
