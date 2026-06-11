@@ -127,7 +127,7 @@ const Index = () => {
         {/* CTA Button */}
         <a
           href={ctaLink}
-          className="block w-full max-w-sm mx-auto mt-8 py-5 px-8 bg-cta-gold text-accent-foreground font-bold text-xl rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 text-center"
+          className="block w-full max-w-sm mx-auto mt-8 py-6 px-8 bg-[#0071CE] hover:bg-[#005fae] text-white font-bold text-2xl rounded-2xl shadow-[0_10px_30px_-5px_rgba(0,113,206,0.6)] hover:shadow-[0_15px_40px_-5px_rgba(0,113,206,0.7)] transition-all duration-200 hover:-translate-y-1 text-center"
         >
           Start Now
         </a>
