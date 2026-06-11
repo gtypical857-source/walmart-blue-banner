@@ -26,7 +26,14 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <SocialProofNotification />
       {/* Hero Section */}
-      <section className="container py-12 text-center">
+      <section className="container py-8 text-center">
+        <img
+          src={heroWoman}
+          alt="Happy woman holding Walmart shopping bags and a $750 gift card"
+          width={1024}
+          height={768}
+          className="w-full max-w-md mx-auto rounded-2xl shadow-card mb-6"
+        />
         <h1 className="text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-4">
           Win a $750<br />Walmart Gift Card!
         </h1>
@@ -36,10 +43,26 @@ const Index = () => {
 
         <a
           href={ctaLink}
-          className="inline-block w-full max-w-sm py-5 px-8 bg-cta-gold text-accent-foreground font-bold text-xl rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 animate-pulse-soft"
+          className="inline-block w-full max-w-sm py-6 px-8 bg-[#0071CE] hover:bg-[#005fae] text-white font-bold text-2xl rounded-2xl shadow-[0_10px_30px_-5px_rgba(0,113,206,0.6)] hover:shadow-[0_15px_40px_-5px_rgba(0,113,206,0.7)] transition-all duration-200 hover:-translate-y-1 animate-pulse-soft"
         >
           Start Now
         </a>
+
+        {/* Trust Badges */}
+        <div className="grid grid-cols-3 gap-3 max-w-md mx-auto mt-6">
+          <div className="flex flex-col items-center text-center gap-1">
+            <Lock className="w-6 h-6 text-green-600" />
+            <span className="text-xs font-medium text-muted-foreground">100% Secure</span>
+          </div>
+          <div className="flex flex-col items-center text-center gap-1">
+            <CheckCircle2 className="w-6 h-6 text-green-600" />
+            <span className="text-xs font-medium text-muted-foreground">No Credit Card Required</span>
+          </div>
+          <div className="flex flex-col items-center text-center gap-1">
+            <Zap className="w-6 h-6 text-green-600" />
+            <span className="text-xs font-medium text-muted-foreground">Takes Less Than 5 Minutes</span>
+          </div>
+        </div>
 
         <p className="text-muted-foreground text-sm mt-6">
           Open to US, CA, UK, AU residents, 18+
