@@ -6,7 +6,7 @@ import heroWoman from "@/assets/hero-woman.jpg";
 const Index = () => {
   const ctaLink = "https://trkio.org/aff_c?offer_id=1913&aff_id=31368";
   const pageUrl = encodeURIComponent(window.location.href);
-  const shareText = encodeURIComponent("Win a $750 Walmart Gift Card! 🎁");
+  const shareText = encodeURIComponent("Claim Your $750 Walmart Gift Card Today! 🎁");
 
   const shareToTwitter = () => {
     window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${pageUrl}`, '_blank');
@@ -35,17 +35,17 @@ const Index = () => {
           className="w-full max-w-md mx-auto rounded-2xl shadow-card mb-6"
         />
         <h1 className="text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-4">
-          Win a $750<br />Walmart Gift Card!
+          Claim Your $750<br />Walmart Gift Card Today
         </h1>
         <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto">
-          Shop your favorite items with a $750 Walmart credit!
+          Join thousands of Americans who have already claimed their $750 Walmart shopping credit
         </p>
 
         <a
           href={ctaLink}
           className="inline-block w-full max-w-sm py-6 px-8 bg-[#0071CE] hover:bg-[#005fae] text-white font-bold text-2xl rounded-2xl shadow-[0_10px_30px_-5px_rgba(0,113,206,0.6)] hover:shadow-[0_15px_40px_-5px_rgba(0,113,206,0.7)] transition-all duration-200 hover:-translate-y-1 animate-pulse-soft"
         >
-          Start Now
+          Continue
         </a>
 
         {/* Trust Badges */}
@@ -129,7 +129,7 @@ const Index = () => {
           href={ctaLink}
           className="block w-full max-w-sm mx-auto mt-8 py-6 px-8 bg-[#0071CE] hover:bg-[#005fae] text-white font-bold text-2xl rounded-2xl shadow-[0_10px_30px_-5px_rgba(0,113,206,0.6)] hover:shadow-[0_15px_40px_-5px_rgba(0,113,206,0.7)] transition-all duration-200 hover:-translate-y-1 text-center"
         >
-          Start Now
+          Continue
         </a>
       </section>
 
