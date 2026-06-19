@@ -1,20 +1,35 @@
 import { useState, useEffect, useCallback } from "react";
 import { X, ShoppingBasket } from "lucide-react";
-import { faker } from "@faker-js/faker";
+
+const names = [
+  "Jessica", "Michael", "Sarah", "James", "Emily",
+  "Tyler", "Ashley", "Brandon", "Madison", "Chris",
+  "Kayla", "Jordan", "Taylor", "Ryan", "Brittany",
+  "Kevin", "Amber", "Justin", "Stephanie", "Daniel",
+];
+
+const states = [
+  "Texas", "Florida", "California", "New York", "Georgia",
+  "Ohio", "Illinois", "Arizona", "Pennsylvania", "Michigan",
+];
+
+const getRandomItem = <T,>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
 
 const SocialProofNotification = () => {
   const [visible, setVisible] = useState(false);
   const [name, setName] = useState("");
+  const [state, setState] = useState("");
   const [dismissed, setDismissed] = useState(false);
 
   const showNotification = useCallback(() => {
-    setName(faker.person.firstName());
+    setName(getRandomItem(names));
+    setState(getRandomItem(states));
     setDismissed(false);
     setVisible(true);
 
     const hideTimer = setTimeout(() => {
       setVisible(false);
-    }, 5500);
+    }, 4000);
 
     return () => clearTimeout(hideTimer);
   }, []);
@@ -22,11 +37,11 @@ const SocialProofNotification = () => {
   useEffect(() => {
     const initialTimer = setTimeout(() => {
       showNotification();
-    }, 2500);
+    }, 5000);
 
     const loopInterval = setInterval(() => {
       showNotification();
-    }, 10000);
+    }, 5000);
 
     return () => {
       clearTimeout(initialTimer);
@@ -54,7 +69,7 @@ const SocialProofNotification = () => {
           <ShoppingBasket className="w-5 h-5 text-white" />
         </div>
         <p className="text-white text-sm font-bold leading-snug">
-          {name} just claimed their $750 Walmart voucher!
+          {name} from {state} just claimed their reward
         </p>
         <button
           onClick={handleDismiss}
