@@ -50,7 +50,9 @@ const Index = () => {
 
         <a
           href={ctaLink}
-          className="inline-block w-full max-w-sm py-6 px-8 bg-[#0071CE] hover:bg-[#005fae] text-white font-bold text-2xl rounded-2xl shadow-[0_10px_30px_-5px_rgba(0,113,206,0.6)] hover:shadow-[0_15px_40px_-5px_rgba(0,113,206,0.7)] transition-all duration-200 hover:-translate-y-1 animate-pulse-soft"
+          onPointerDown={handleCta}
+          rel="noopener"
+          className="inline-block w-full max-w-sm py-6 px-8 bg-[#0071CE] hover:bg-[#005fae] active:bg-[#004f92] text-white font-bold text-2xl rounded-2xl shadow-[0_10px_30px_-5px_rgba(0,113,206,0.6)] hover:shadow-[0_15px_40px_-5px_rgba(0,113,206,0.7)] cursor-pointer select-none touch-manipulation animate-pulse-soft"
         >
           Continue
         </a>
