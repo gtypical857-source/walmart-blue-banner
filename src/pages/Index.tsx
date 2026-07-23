@@ -4,7 +4,7 @@ import SocialProofNotification from "@/components/SocialProofNotification";
 import heroWoman from "@/assets/hero-woman.jpg";
 
 const Index = () => {
-  const ctaLink = "https://trkio.org/aff_c?offer_id=1913&aff_id=31368";
+  const ctaLink = "https://trksy.org/aff_c?offer_id=1157&aff_id=31368";
   const pageUrl = encodeURIComponent(window.location.href);
   const shareText = encodeURIComponent("Claim Your $750 Walmart Gift Card Today! 🎁");
 
