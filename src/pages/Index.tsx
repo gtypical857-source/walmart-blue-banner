@@ -8,6 +8,13 @@ const Index = () => {
   const pageUrl = encodeURIComponent(window.location.href);
   const shareText = encodeURIComponent("Claim Your $750 Walmart Gift Card Today! 🎁");
 
+  const handleCta = (e: React.PointerEvent<HTMLAnchorElement>) => {
+    // Navigate immediately on pointer-down for instant response
+    if (e.button !== 0) return;
+    e.preventDefault();
+    window.location.href = ctaLink;
+  };
+
   const shareToTwitter = () => {
     window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${pageUrl}`, '_blank');
   };
