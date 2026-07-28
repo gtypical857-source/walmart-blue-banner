@@ -1,7 +1,6 @@
 import { Check, Gift, DollarSign, Share, MessageCircle, Lock, CheckCircle2, Zap } from "lucide-react";
 
 import SocialProofNotification from "@/components/SocialProofNotification";
-import heroWoman from "@/assets/hero-woman.jpg";
 
 const Index = () => {
   const ctaLink = "https://trksy.org/aff_c?offer_id=1157&aff_id=31368";
