@@ -32,16 +32,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <SocialProofNotification />
       {/* Hero Section */}
-      <section className="container py-8 text-center">
-        <img
-          src={heroWoman}
-          alt="Happy woman holding Walmart shopping bags and a $750 gift card"
-          width={1024}
-          height={768}
-          className="w-full max-w-md mx-auto rounded-2xl shadow-card mb-6"
-        />
-        <h1 className="text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-4">
-          Claim Your $750<br />Walmart Gift Card Today
+      <section className="container py-12 text-center">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-foreground leading-[1.05] mb-6 tracking-tight">
+          Claim Your <span className="text-[#0071CE]">$750</span><br />Walmart Gift Card Today
         </h1>
         <p className="text-lg text-muted-foreground mb-8 max-w-md mx-auto">
           Join thousands of Americans who have already claimed their $750 Walmart shopping credit
